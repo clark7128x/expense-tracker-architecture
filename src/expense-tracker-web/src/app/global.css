@@ -1,0 +1,30 @@
+:root { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; color: #182c25; background: #f5f6f2; font-synthesis: none; --green: #216348; --line: #d6dfd8; --muted: #58665f; --error: #9b2929; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 16px; line-height: 1.5; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { font-size: 2.25rem; line-height: 1.15; margin-bottom: 0; letter-spacing: -.04em; }
+h2 { font-size: 1.2rem; margin-bottom: 20px; }
+h3 { font-size: 1.05rem; }
+button, input, select, textarea { font: inherit; border: 1px solid #8f9f94; border-radius: 5px; background: white; color: inherit; min-height: 44px; padding: 9px 12px; max-width: 100%; }
+button { cursor: pointer; font-weight: 600; }
+button:hover:not(:disabled) { background: #e9efea; }
+button:disabled { opacity: .55; cursor: default; }
+button.primary { color: white; background: var(--green); border-color: var(--green); }
+button.primary:hover:not(:disabled) { background: #174c36; }
+button.danger { color: var(--error); }
+:focus-visible { outline: 3px solid #b26308; outline-offset: 3px; }
+label { display: block; font-size: .9rem; font-weight: 600; }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+fieldset label { margin-bottom: 6px; }
+fieldset input, fieldset select, fieldset textarea { width: 100%; margin-bottom: 17px; }
+textarea { resize: vertical; }
+input[type=date], input[type=month] { min-width: 0; }
+.muted { color: var(--muted); font-weight: 400; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.error { padding: 12px; color: var(--error); background: #fff2ef; border-left: 3px solid var(--error); overflow-wrap: anywhere; }
+.fieldError { display: block; color: var(--error); font-size: .875rem; margin: -10px 0 16px; }
+[aria-invalid=true] { border-color: var(--error); }
+dialog { border: 1px solid var(--line); border-radius: 8px; padding: 24px; max-width: min(440px, calc(100% - 32px)); color: inherit; }
+dialog::backdrop { background: #14251b80; }
+.skipLink { position: absolute; left: 16px; top: -100px; background: white; padding: 10px; }
+.skipLink:focus { top: 10px; }
